@@ -108,6 +108,7 @@ class Home extends Component {
                         </Card>
                     </Col>
                 </Row>
+                <Footer />
             </Container>
         );
     }
