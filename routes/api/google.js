@@ -1,9 +1,9 @@
-const router = require ("express").Router();
-const googleController = require ("../../controllers/googleController");
+const router = require("express").Router();
+const googleController = require("../../controllers/googleController");
 
-// Linkage to Google API
+// Matches with "/api/google"
 router
-    .route("/")
-    .get(googleController.findAll);
-    
+  .route("/")
+  .get(googleController.findAll);
+
 module.exports = router;
