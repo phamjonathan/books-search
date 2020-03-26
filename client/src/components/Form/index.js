@@ -3,21 +3,23 @@ import React from "react";
 function Form({ q, handleInputChange, handleFormSubmit }) {
   return (
     <form>
-      <div className="form-group">
-        <label htmlFor="Query">
-          <strong>Book</strong>
+
+      <div className= "form-group">
+        <label htmlFor= "Query">
+          <strong> Google Books </strong>
         </label>
         <input
-          className="form-control"
-          id="Title"
-          type="text"
-          value={q}
-          placeholder="Ready Player One"
-          name="q"
-          onChange={handleInputChange}
+          className= "form-control"
+          id= "Title"
+          type= "text"
+          value= {q}
+          placeholder= "Ready Player One"
+          name= "q"
+          onChange= {handleInputChange}
           required
         />
       </div>
+
       <div className="pull-right">
         <button
           onClick={handleFormSubmit}
@@ -27,6 +29,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           Search
         </button>
       </div>
+
     </form>
   );
 }
